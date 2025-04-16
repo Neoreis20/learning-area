@@ -7,5 +7,17 @@
   </head>
   <body>
     <button>Click me</button>
+    <script>
+  // O JavaScript fica aqui
+      function criarParagrafo () {
+        let para = document.createElement ("p");
+        para. textContent = "Você clicou no Botão!";
+        document.body.appendChild (para);
+      }
+      const botoes = document.querySelectorAll("button");
+      for (var i = 0; i < botoes.lenght; i++) {
+        botoes[i].addEventlinester("click" , criarParagrafo);
+      }
+</script>
   </body>
 </html>
